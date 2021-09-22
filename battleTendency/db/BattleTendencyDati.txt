@@ -1,0 +1,177 @@
+INSERT INTO `UTENTE` 
+(`CF`, `Cognome`, `Nome`, `DataDiNascita`, `Email`, `Username`, `Password`, `DataRegistrazione`, `Tipo`, `Attivo`) VALUES
+
+(0, 'system', 'admin', '0000-00-00', 'battletendency@system.com', 'system', 'system', NOW(), 'admin', 1),
+
+(1, 'Hu', 'Marco', '1996-02-19', 'marco.hu2@studio.unibo.it', 'marcotto', 'marcotto', NOW(), 'admin', 1),
+
+(2, 'Mattiussi', 'Vlad', '1996-02-19', 'vlad.mattiussi@studio.unibo.it', 'vladdino', 'vladdino', NOW(), 'admin', 1),
+
+(3, 'Abu', 'Ismam', '1996-02-19', 'ismam.abu@studio.unibo.it', 'ismi', 'ismi', NOW(), 'admin', 1),
+
+(4, 'Rossi', 'Mario', '2000-01-011', 'mario.rossi@studio.unibo.it', 'marioTheUser', 'marioTheUser', NOW(), 'user', 1),
+
+(6, 'Leone', 'Abbacchio', '2000-01-011', 'leoneabbacchio@jojo.it', 'leone', 'leone', NOW(), 'organizer', 1),
+
+(7, 'Bucciarati', 'Bruno', '2000-01-011', 'brunobruno@jojo.it', 'bruno', 'bruno', NOW(), 'user', 1),
+
+(8, 'Pannacotta', 'Fugo', '2000-01-011', 'pannafugo@jojo.it', 'fugo', 'fugo', NOW(), 'organizer', 1),
+
+(9, 'Zucchero', 'Mario', '2000-01-011', 'mariozucc@jojo.it', 'mario', 'mario', NOW(), 'user', 1),
+
+(10, 'Nero', 'Risotto', '2000-01-011', 'risottonero@jojo.it', 'risotto', 'risotto', NOW(), 'user', 1),
+
+(5, 'Verdi', 'Luigi', '2000-01-011', 'luigi.verdi@studio.unibo.it', 'organizer', 'organizer', NOW(), 'organizer', 1);
+
+
+INSERT INTO `COMBATTENTE` 
+(`Nome`, `NomeArte`, `MossaSpeciale`, `Descrizione`,  `immagine`) VALUES
+
+('Jotaro Kujo', 'JoJo', 'Star Platinum', "Jotaro Kujo e' il protagonista di Stardust Crusaders, terza serie del manga Le bizzarre avventure di JoJo di Hirohiko Araki. e' figlio di Sadao Kujo, un musicista jazz giapponese, e Holly Joestar, la figlia di Joseph Joestar, il protagonista della seconda serie, Battle Tendency, di cui e' dunque il nipote. E' l'unico JoJo a fare almeno un'apparizione in quattro archi narrativi diversi (dal terzo al sesto), oltre a comparire anche nelle due serie anime e nei videogiochi tratti dal manga. Il personaggio e' stato molto apprezzato dal pubblico e dalla critica. Inoltre e' l'unico a non considerare importante unicamente la potenza ma anche la bellezza del suo stand Star Platinum. Al gruppo di mangaka al femminile CLAMP Jotaro e' piaciuto cose' tanto da inserirlo anche nel loro filmato CLAMP in Wonderland.", "jotaro.jpg"),
+
+('Dio Brando', 'Dio', 'The World', "Dio e' stato concepito come un personaggio arrogante e desideroso di essere al di sopra di tutti, quasi una divinite'; per questo Hirohiko Araki scelse di chiamarlo con il termine italiano per 'Dio', anche in riferimento a Ronnie James Dio, mentre il cognome e' un riferimento all'attore Marlon Brando. In coppia con Jonathan Joestar, rappresentano i valori assoluti del male e del bene, rispettivamente.", "dio.jpg"),
+
+('Joseph Joestar', 'JoJo', 'Hermit Purple', "E' figlio di George Joestar II e della maestra delle onde concentriche Lisa Lisa/Elisabeth Joestar, e' il nonno di Jotaro Kujo.", "joseph.jpg"),
+
+('Diavolo', 'Diavolo', 'King Crimson', "E' nato il 26 agosto 1967 in una prigione femminile, da madre carcerata, la quale sosteneva che il padre fosse morto di malattia, e che il bimbo fosse stato concepito piu' di due anni prima. Naturalmente nessuno le credette, ma una cosa era fuori discussione: in quel penitenziario non vi era alcun uomo, e anche tutte le guardie erano donne, e cosi' il modo in cui la donna fosse rimasta incinta rimase un mistero. Non essendo possibile per la madre tenere il bambino in prigione, il parroco del suo piccolo villaggio d'origine in Sardegna se ne prese cura. Anni dopo, quando Diavolo aveva 19 anni, il parroco fece dei lavori di ristrutturazione alla stanza del ragazzo per trasformarlo in un appartamento ma sotto il pavimento della stanza trovo' una sorpresa inaspettata: una donna sepolta viva, la madre di Diavolo. Quella stessa notte scoppio' un incendio nel villaggio che provoco' sette vittime, fra cui il prete e Diavolo. Quest'ultimo pero' aveva solo finto la sua morte. In quel periodo Diavolo fece un viaggio in Egitto, per riportare alla luce tesori nascosti e rivenderli: nei suoi scavi trovo' un arco e sei frecce e scompari' subito con il bottino. Vendette cinque di esse alla vecchia Enya Gail e ne tenne una per sé, grazie alla quale sviluppo' il suo Stand. La freccia venne poi affidata a Polpo e al suo Black Sabbath. Nei dieci anni successivi Diavolo inizio' la sua scalata all'interno di Passione, usando il nome Solido Naso, fino a raggiungere il vertice: nel farlo uccise tutte le persone che avessero legami di sangue con lui o che riuscivano a scoprire la sua vera identita', al fine di assicurarsi l'anonimato piu' totale. Tra questi vi era Jean Pierre Polnareff. Ai tempi della storia narrata e' il capo dell'Organizzazione chiamata Passione e ha appena scoperto di avere una figlia di nome Trish, nata da una relazione avuta in gioventu' con una donna ed incarica Bucciarati e la sua squadra di scortare la ragazza da lui, ma il suo vero obiettivo e' quello di ucciderla per cancellare ogni traccia del proprio passato. ", "diavolo.jpg"),
+
+('Josuke', 'JoJo', 'Crazy Diamond', "E' figlio illegittimo di Joseph Joestar, nonché zio di Jotaro Kujo. Nel suo caso, il nomignolo 'Jojo' e' giustificato dal secondo kanji del suo nome proprio, normalmente pronunciato 'suke' ma che in alcuni casi puo' essere pronunciato 'jo'. Nato da un'avventura di Joseph Joestar con una donna giapponese, Tomoko Higashikata, ha un forte senso di giustizia e una bizzarra fobia per i rettili, dai serpenti alle tartarughe. All'eta' di 4 anni, Josuke rischio' la morte per un eccesso febbrile dovuto a cause sconosciute ai medici, e resto' per cinquanta giorni in pericolo di morte.", "josuke.jpg"),
+
+('Jean Pierre Polnareff', 'JPP', 'Silver Chariot', "Il francese Jean Pierre Polnareff viaggia insieme a Jotaro e Joseph per vendicaresua sorella, che e' stata uccisa da un uomo con due mani destre. Successivamente Polnareff aiuta i ribelli della Bucciarati's Gang nella loro missione per sconfiggere the Boss della gang italianaPassione, la sua arcinemica.", "polnareff.jpg"),
+
+('Kira Yoshikage', 'Bite The Dust', 'Killer Queen', "Vive nella cittadina giapponese di Morio-cho ed e' un serial killer dotato di Stand. Figlio di genitori in eta' avanzata, il padre Yoshihiro mori' di tumore quando lui aveva 21 anni, mentre la madre mori' di cause naturali di li' a poco. Dal padre, che possedeva una delle Frecce donatagli da Enya Gail durante un viaggio in Egitto, ricevera' il proprio stand Killer Queen. Desidera piu' di ogni altra cosa essere lasciato in pace, e per questo motivo cerca sempre di non attirare l'attenzione su di sé: nonostante sia molto intelligente e competente, continua a lavorare come un semplice impiegato, rifiutando ogni tipo di promozione. Non esce mai con nessuno, non si fa conoscere, rimane nell'ombra e non crea disturbo a nessuno; il suo unico 'difetto' e' che ogni tanto le sue unghie crescono a dismisura, e quando questo succede lo assale un impulso omicida che lo porta a massacrare una vittima (sempre una donna, scelta per la bellezza delle sue mani) e a conservarne la mano portandola con sé come un feticcio, almeno finché non si decompone perdendo la sua attrattivita'.", "kira.jpg"),
+
+('Narancia Ghirga', 'NG', 'Aerosmith', "E' ciecamente leale e affettuoso nei confronti delle persone che conosce bene, ma tratta con diffidenza chiunque altro. Anche se alle volte si comporta in modo infantile, all'occorrenza sa essere veramente pericoloso. La madre di Narancia mori' di una malattia, e suo padre lo considerava un perdente. Incastrato per un furto che non aveva commesso, venne rinchiuso in riformatorio dove contrasse una malattia agli occhi. All'eta' di 14 anni, mentre vagava per la strada venne raccolto da Fugo Pannacotta e incontro' Bruno Bucciarati, che gli diede da mangiare e in seguito lo fece ricoverare in una clinica, dove poi guari'. Narancia fu cosi' colpito dalla gentilezza di Bucciarati che promise di seguirlo per sempre, nonostante il parere contrario di quest'ultimo. Dopo che Bucciarati e Giorno Giovanna decidono di tradire l'organizzazione, Narancia e' l'ultimo del gruppo a schierarsi con loro. Perdera' poi la vita durante la battaglia finale per mano di Diavolo.", "narancia.png"),
+
+('Giorno Giovanna', 'JoJo', 'Golden Experience', "Figlio di Dio Brando e di una donna giapponese, il suo vero nome e' Haruno Shiobana; in seguito pero' la donna si sposera' con un uomo italiano e si stabilira' con lui in Italia, dove il nome del figlio verra' traslitterato e modificato dai suoi coetanei in 'Giorno Giovanna'. Poiché Dio era in possesso del corpo di Jonathan Joestar, Giorno e' a tutti gli effetti un esponente della famiglia Joestar, come testimonia il marchio a forma di stella sul corpo. Quand'era piccolo veniva spesso maltrattato e preso in giro; dopo aver aiutato con i suoi poteri un gangster ferito, tuttavia, la gente inizio' a trattarlo con benevolenza, e da allora Giorno decise che sarebbe diventato una gangStar (mix tra gangster e star) in modo da ottenere rispetto e punire le ingiustizie alla fonte. Dopo aver ottenuto il proprio potere Stand, Gold Experience, i suoi capelli, inizialmente neri, sono diventati biondi, esattamente come quelli del padre Dio Brando. Ha la curiosa capacita' di infilarsi l'intero padiglione auricolare nel buco delle orecchie.", "giorno.png"),
+
+('Jonathan Joestar', 'JoJo', 'Onda Concentrica', "Vive nell'Inghilterra alla fine del XIX secolo ed e' il figlio del ricco lord George Joestar I. Dopo aver perso la madre in un incidente durante un viaggio con la carrozza vive una vita tranquilla. Il padre adotta Dio Brando, coetaneo di Jonathan credendo che suo padre in gioventu' gli avesse salvato la vita. Si rivelera' essere senza pieta' per la famiglia Joestar, prima privando Jonathan di ogni amicizia e affetto (eliminando il suo fido cane Danny e allontanando da lui l'amata Erina Pendleton), e poi cercando di uccidere il genitore adottivo con lo stesso veleno con cui aveva ucciso il padre.", "jonathan.jpg");
+
+
+INSERT INTO `EVENTO` 
+(`Nome`, `Data`, `Luogo`, `DescrizioneBreve`, `Descrizione`, `IdCombattente`, `PAR_IdCombattente`,`Immagine`,   `CF`, `UltimaModifica`) VALUES
+
+("Giorno vs Diavolo", '2021-12-11', 'Roma', 'Vento Aureo', "Finalmente tutti raggiungono il Colosseo: in uno scontro durissimo e in seguito a molti imprevisti, Bucciarati e Narancia perdono la vita, e sembra che anche Giorno Giovanna sia destinato alla stessa fine, in quanto dopo essere stato trapassato dalla Freccia non pare aver ottenuto nessun nuovo potere e dunque essere destinato a morire. Pero' non e' cosi': il suo Stand Gold Experience ottiene un potere che lo rende praticamente invincibile, anche se non e' totalmente controllabile dalla volonta' di Giorno. Come andra' a finire ?", 
+4, 9, 'GiornoVsKingCrimson.jpg', 1, NOW()),
+
+("Josuke vs Kira", '2021-03-12', 'Morio-Cho', 'Diamond is unbreakable', "Nonostante i suoi provvedimenti, verra' scoperto da Josuke e i suoi amici, aiutati da Hayato. Dopo un impegnativo scontro col protagonista, Kira, ormai ridotto allo stremo e circondato da avversari e testimoni, tenta di usare Bites the Dust su un'infermiera venuta a soccorrerlo.", 
+5, 7, 'JosukeVsKira.jpg', 2, NOW()),
+
+("Jonathan vs Dio", '2023-08-02', 'USA', 'Phantom Blood', "Dopo essere stato scoperto e messo alle corde da Jonathan e il suo amico Speedwagon, Dio usa su di sé la Maschera di Pietra, un portentoso artefatto di origine azteca in grado di trasformare l'uomo in un vampiro. Per affrontarlo, Jonathan apprendera' la tecnica delle onde concentriche dal misterioso avventuriero Will Antonio Zeppeli, grazie alla quale potra' scontrarsi con zombie e cavalieri medievali evocati da Dio Brando fino allo scontro finale con il nemico.", 
+10, 2, 'JonathanVsDio.jpg', 3, NOW()),
+
+("Jotaro vs Dio", '2020-05-05', 'USA', 'Scontro tra 2 colossi', "La vita dello studente Jotaro Kujo viene sconvolta dal ritorno di un antico nemico della sua famiglia e dal risveglio di un misterioso potere nel suo corpo. Questo dare' il via ad una rocambolesca avventura in cui verre' coinvolto da suo nonno Joseph, protagonista di una delle precedenti saghe. Accompagnati da un gruppo di bizzarri personaggi (uno studente giapponese, uno spadaccino francese, un saggio egiziano e un cane straordinariamente umano) che si uniranno a loro in una missione comune, nonno e nipote partono alla volta dell'Egitto, in un viaggio ricco di imprevisti, adrenalina e scontri all'ultimo sangue.",
+ 1, 2, 'jotarovsdio.jpg', 2, NOW()),
+
+("Joseph vs Dio", '2020-04-08', 'Egitto', 'Scontro senza tempo', "Dio  si era impossessato del corpo del nonno di Joseph, Jonathan Joestar, per rimpiazzare il proprio corpo, distrutto dallo stesso Jonathan. Ai tre protagonisti, tutti dotati di poteri simili si aggiungeranno altri durante il viaggio, infatti lo stesso Brando inviera' numerosi sicari con chiari intenti omicidi, deciso a non correre rischi e farla finita con la famiglia Joestar. Finiti i sicari Dio se la vedra' con Joseph.", 
+1, 3, 'JosephVsDio.jpg', 3, NOW()),
+
+("Jotaro vs Kira", '2020-01-12', 'Morio-Cho', 'Star Platinum: The World!', "Nel 1999 Jotaro si reca nella cittadina di Morio-cho per incontrare Josuke Higashikata, che nonostante sia molto più giovane di lui è suo zio (è infatti il figlio illegittimo di Joseph Joestar). Jotaro lo avverte dell'esistenza di un pericoloso portatore di Stand nella cittadina in cui vive. Anche dopo aver sconfitto quest'ultimo, Anjiro 'Angelo' Katajiri, Jotaro si trattiene a Morio-cho (dove viene raggiunto da Joseph) per aiutare Josuke nella lotta contro un pericolosissimo serial killer dotato di Stand, Yoshikage Kira.", 
+3, 7, 'KiraVsJotaro.jpg', 2, NOW()),
+
+("Jotaro vs Josuke", '2023-12-11', 'Morio-Cho', 'Crazy Platinum!', "Nel 1999 Jotaro si reca nella cittadina di Morio-cho per incontrare Josuke Higashikata, che nonostante sia molto più giovane di lui è suo zio (è infatti il figlio illegittimo di Joseph Joestar). Jotaro lo avverte dell'esistenza di un pericoloso portatore di Stand nella cittadina in cui vive. Anche dopo aver sconfitto quest'ultimo, Anjiro 'Angelo' Katajiri, Jotaro si trattiene a Morio-cho (dove viene raggiunto da Joseph) per aiutare Josuke nella lotta contro un pericolosissimo serial killer dotato di Stand, Yoshikage Kira.", 
+1, 5, 'jotaroVsJosuke.jpg', 3, NOW()),
+
+("Dio vs Polnareff", '2021-11-11', 'England', 'Migrain', "Non ho idea di cosa scrivere per questo scontro, se non che ne vedremo delle belle", 
+3, 8, 'polnareffVsDio.bmp', 3, NOW());
+
+
+
+
+ 
+	 
+INSERT INTO `BIGLIETTO` 
+(`IdEvento`, `Numero`, `Tipo`, `Prezzo`) VALUES
+
+(3, 1, 'Prima fila', '11.10'),
+(3, 2, 'Prima fila', '11.10'),
+(3, 3, 'Prima fila', '11.10'),
+(3, 4, 'Seconda fila', '9.00'),
+(3, 5, 'Seconda fila', '9.00'),
+(3, 6, 'Seconda fila', '9.00'),
+(3, 7, 'Terza fila', '7.00'),
+(3, 8, 'Terza fila', '7.00'),
+(3, 9, 'Terza fila', '7.00'),
+
+(4, 1, 'Prima fila', '11.10'),
+(4, 2, 'Prima fila', '11.10'),
+(4, 3, 'Prima fila', '11.10'),
+(4, 4, 'Seconda fila', '9.00'),
+(4, 5, 'Seconda fila', '9.00'),
+(4, 6, 'Seconda fila', '9.00'),
+(4, 7, 'Terza fila', '7.00'),
+(4, 8, 'Terza fila', '7.00'),
+(4, 9, 'Terza fila', '7.00'),
+
+(6, 1, 'Prima fila', '11.10'),
+(6, 2, 'Prima fila', '11.10'),
+(6, 3, 'Prima fila', '11.10'),
+(6, 4, 'Seconda fila', '9.00'),
+(6, 5, 'Seconda fila', '9.00'),
+(6, 6, 'Seconda fila', '9.00'),
+(6, 7, 'Terza fila', '7.00'),
+(6, 8, 'Terza fila', '7.00'),
+(6, 9, 'Terza fila', '7.00'),
+
+(7, 1, 'Prima fila', '11.10'),
+(7, 2, 'Prima fila', '11.10'),
+(7, 3, 'Prima fila', '11.10'),
+(7, 4, 'Seconda fila', '9.00'),
+(7, 5, 'Seconda fila', '9.00'),
+(7, 6, 'Seconda fila', '9.00'),
+(7, 7, 'Terza fila', '7.00'),
+(7, 8, 'Terza fila', '7.00'),
+(7, 9, 'Terza fila', '7.00'),
+
+(2, 1, 'Prima fila', '11.10'),
+(2, 2, 'Prima fila', '11.10'),
+(2, 3, 'Prima fila', '11.10'),
+(2, 4, 'Seconda fila', '9.00'),
+(2, 5, 'Seconda fila', '9.00'),
+(2, 6, 'Seconda fila', '9.00'),
+(2, 7, 'Terza fila', '7.00'),
+(2, 8, 'Terza fila', '7.00'),
+(2, 9, 'Terza fila', '7.00'),
+
+(1, 0, 'Prima fila', '10.50'),
+(1, 1, 'Prima fila', '10.50'),
+(1, 2, 'Prima fila', '10.50'),
+(1, 3, 'Prima fila', '10.50'),
+(1, 4, 'Prima fila', '10.50'),
+(1, 5, 'Prima fila', '10.50'),
+(1, 6, 'Prima fila', '10.50'),
+(1, 7, 'Prima fila', '10.50'),
+(1, 8, 'Prima fila', '10.50'),
+(1, 9, 'Prima fila', '10.50'),
+(1, 10, 'Prima fila', '10.50'),
+(1, 11, 'Seconda fila', '7.00'),
+(1, 12, 'Seconda fila', '7.00'),
+(1, 13, 'Seconda fila', '7.00'),
+(1, 14, 'Seconda fila', '7.00'),
+(1, 15, 'Seconda fila', '7.00'),
+(1, 16, 'Seconda fila', '7.00'),
+(1, 17, 'Seconda fila', '7.00'),
+(1, 18, 'Seconda fila', '7.00'),
+(1, 19, 'Seconda fila', '7.00'),
+(1, 20, 'Seconda fila', '7.00'),
+(1, 21, 'Terza fila', '5.00'),
+(1, 22, 'Terza fila', '5.00'),
+(1, 23, 'Terza fila', '5.00'),
+(1, 24, 'Terza fila', '5.00'),
+(1, 25, 'Terza fila', '5.00'),
+(1, 26, 'Terza fila', '5.00'),
+(1, 27, 'Terza fila', '5.00'),
+(1, 28, 'Terza fila', '5.00'),
+(1, 29, 'Terza fila', '5.00'),
+(1, 30, 'Terza fila', '5.00');
+
+
+INSERT INTO `MESSAGGIO` 
+(`Contenuto`, `DataInvio`, `Dest_CF`, `Mit_CF`) VALUES
+("Benvenuto nel sito!", NOW(), 1, 0 ),
+("Benvenuto nel sito!", NOW(), 2, 0 ),
+("Benvenuto nel sito!", NOW(), 3, 0 ),
+("Benvenuto nel nostro sito, utente!", NOW(), 4, 1 ),
+("Benvenuto nel sito!", NOW(), 4, 0 );
+
+
